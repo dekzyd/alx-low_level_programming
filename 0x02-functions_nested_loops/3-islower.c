@@ -2,7 +2,8 @@
 
 /**
  * _islower - checks if argument isin lowercase
- *@c The character to check
+ *@c: The character to check
+ *
  * Return: Success (1) Failure(0).
  */
 int _islower(int c)
