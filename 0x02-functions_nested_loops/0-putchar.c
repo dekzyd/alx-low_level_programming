@@ -5,13 +5,14 @@
  *
  * Return: Always 0.
  */
-int main(void)
+int main()
 {
 	char s[] = "_putchar";
-	while (*s)
+	int c = 0;
+	while (s[c])
 	{
-		_putchar(*s);
-		s = s + 1;
+		_putchar(s[c]);
+		c++;
 	};
 	_putchar('\n');
 	return (0);
