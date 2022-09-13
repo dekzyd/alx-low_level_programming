@@ -5,10 +5,11 @@
  *
  * Return: Always 0.
  */
-int main()
+int main(void)
 {
 	char s[] = "_putchar";
 	int c = 0;
+
 	while (s[c])
 	{
 		_putchar(s[c]);
