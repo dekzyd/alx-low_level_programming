@@ -2,7 +2,7 @@
 
 /**
  * _islower - checks if argument isin lowercase
- *
+ *@c The character to check
  * Return: Success (1) Failure(0).
  */
 int _islower(int c)
@@ -11,7 +11,7 @@ int _islower(int c)
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
-		if (i == c) 
+		if (i == c)
 		{
 			return (1);
 		};
