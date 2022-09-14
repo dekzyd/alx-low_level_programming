@@ -1,6 +1,11 @@
 #include <stdio.h>
+/**
+ * times_table - returns times table
+ *
+ * Return: always 0
+ */
 
-int main()
+void times_table(void)
 {
 	int tableSize = 9;
 	int a;
