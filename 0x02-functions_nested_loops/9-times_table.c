@@ -30,5 +30,5 @@ void times_table(void)
 			putchar(((i * j) % 10) + '0');
 		}
 		putchar('\n');
-	}return (0);
+	}
 }
