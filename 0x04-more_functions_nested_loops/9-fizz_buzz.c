@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * fizzbuzz - prints FizzBuzz, Fizz, Buzz or the number.
+ * main - prints FizzBuzz, Fizz, Buzz or the number.
  *
  * Return: success 0
  */
-int fizzbuzz(void)
+int main(void)
 {
 	int c;
 
