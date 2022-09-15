@@ -15,12 +15,5 @@ int _isdigit(int c)
 		if (count == c)
 			return (1);
 	}
-
-	for (count = 0; count <= 9; count++)
-	{
-		if (count == c)
-			return (1)
-	}
-
 	return (0);
 }

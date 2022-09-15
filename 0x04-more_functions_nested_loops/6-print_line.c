@@ -3,7 +3,7 @@
 /**
  * print_line - prints lines
  *@c: the amount of lines to be printed
-
+ *
  * Return: void
  */
 void print_line(int c)
