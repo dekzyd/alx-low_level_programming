@@ -12,11 +12,11 @@ double largest_number(double a, double b, double c)
 {
 	double largest;
 
-	if (a > b && a > c)
+	if (a >= b && a >= c)
 	{
 		largest = a;
 	}
-	else if (b > a && b > c)
+	else if (b >= a && b >= c)
 	{
 		largest = b;
 	}
