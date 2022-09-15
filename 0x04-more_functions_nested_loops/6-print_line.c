@@ -2,11 +2,11 @@
 
 /**
  * print_line - prints lines
- *@c: the amount of lines to be printed
+ *@s: the amount of lines to be printed
  *
  * Return: void
  */
-void print_line(int c)
+void print_line(int s)
 {
 	int c;
 
