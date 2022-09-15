@@ -10,7 +10,7 @@ print_square(int size)
 {
 	int c,j;
 
-	if (s <= 0)
+	if (size <= 0)
 	{
 		putchar('\n');
 	}
