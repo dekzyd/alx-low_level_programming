@@ -1,5 +1,5 @@
-#include "main.h"
 #include <stdio.h>
+
 /**
  * fizzbuzz - prints FizzBuzz, Fizz, Buzz or the number.
  *
