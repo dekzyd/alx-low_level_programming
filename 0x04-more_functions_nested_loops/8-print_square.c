@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * print_square - prints squares
@@ -6,19 +6,20 @@
  *
  * Return: returns void
  */
-print_square(int size)
+void print_square(int size)
 {
-	int c,j;
+	int c;
+	int j;
 
 	if (size <= 0)
-	putchar('\n');
+	_putchar('\n');
 
 	for (j = 0; j < size; j++)
 	{
 		for (c = 0; c < size; c++)
 		{
-			putchar('#');
+			_putchar('#');
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
