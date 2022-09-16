@@ -31,7 +31,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%d ", c);
+			printf("%d", c);
 			if (c < 100)
 				putchar(' ');
 		}
