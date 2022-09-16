@@ -14,27 +14,19 @@ int main(void)
 		if ((c % 5 == 0) && (c % 3 == 0))
 			printf("FizzBuzz");
 			if (c < 100)
-			{
-				putchar(' ');
-			}
+			putchar(' ');
 		else if (c % 5 == 0)
 			printf("Buzz");
 			if (c < 100)
-			{
-				putchar(' ');
-			}
+			putchar(' ');
 		else if (c % 3 == 0)
 			printf("Fizz");
 			if (c < 100)
-			{
-				putchar(' ');
-			}
+			putchar(' ');
 		else
 			printf("%d ", c);
 			if (c < 100)
-			{
-				putchar(' ');
-			}
+			putchar(' ');
 	}
 	putchar('\n');
 	return (0);
