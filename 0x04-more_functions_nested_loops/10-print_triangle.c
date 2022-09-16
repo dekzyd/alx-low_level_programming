@@ -3,8 +3,9 @@
 /**
  * print_triangle - prints a triangle
  * @size: triangles size
- * Return: Success 0
+ * Return: Always 0
  */
+
 void print_triangle(int size)
 {
 	int i;
@@ -26,7 +27,7 @@ void print_triangle(int size)
 			{
 				_putchar('#');
 			}
-			_putchar('\n')
+			_putchar('\n');
 		}
 	}
 }
