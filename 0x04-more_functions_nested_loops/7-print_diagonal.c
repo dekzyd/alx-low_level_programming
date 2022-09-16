@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print-diagonal - draw diagonal 
+ * print_diagonal - draw diagonal
  * @n: the number of times
  * Return: Always 0
  */
