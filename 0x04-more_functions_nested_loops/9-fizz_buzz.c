@@ -12,7 +12,7 @@ int main(void)
 	for (c = 1; c <= 100; c++)
 	{
 		if (c % 15 == 0)
-		{	
+		{
 			printf("FizzBuzz");
 			if (c < 100)
 				putchar(' ');
