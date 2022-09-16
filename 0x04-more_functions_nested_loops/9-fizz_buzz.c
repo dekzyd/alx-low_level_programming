@@ -11,23 +11,31 @@ int main(void)
 
 	for (c = 1; c <= 100; c++)
 	{
-		if ((c % 5 == 0) && (c % 3 == 0))
+		if (c % 15 == 0)
+		{	
 			printf("FizzBuzz");
 			if (c < 100)
-			putchar(' ');
+				putchar(' ');
+		}
 		else if (c % 5 == 0)
+		{
 			printf("Buzz");
 			if (c < 100)
-			putchar(' ');
+				putchar(' ');
+		}
 		else if (c % 3 == 0)
+		{
 			printf("Fizz");
 			if (c < 100)
-			putchar(' ');
+				putchar(' ');
+		}
 		else
+		{
 			printf("%d ", c);
 			if (c < 100)
-			putchar(' ');
+				putchar(' ');
+		}
 	}
-	putchar('\n');
-	return (0);
+	printf("\n");
+return (0);
 }
