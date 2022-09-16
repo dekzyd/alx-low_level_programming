@@ -5,6 +5,7 @@
  * @n: the number of times
  * Return: Always 0
  */
+
 void print_diagonal(int n)
 {
 	if (n == 0 || n < 0)
@@ -19,9 +20,9 @@ void print_diagonal(int n)
 		{
 			int j;
 
-			for (j = 0; i <= i; j++)
+			for (j = 0; j <= i; j++)
 			{
-				if (j == 1)
+				if (j == i)
 					_putchar('\\');
 				else
 					_putchar(' ');
