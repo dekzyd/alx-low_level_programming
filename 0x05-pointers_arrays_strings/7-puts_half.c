@@ -20,8 +20,7 @@ void puts_half(char *str)
 	{
 	for (j = (ln - 1) / 2; j <= ln ; j++)
 	{
-		if (*(str + j) != '\0')
-			_putchar(*(str + i));
+		_putchar(*(str + i));
 	}
 	_putchar('\n');
 	}
@@ -29,8 +28,7 @@ void puts_half(char *str)
 	{
 	for (j = ln / 2; j < ln ; j++)
 	{
-		if (*(str + j) != '\0')
-			_putchar(*(str + j));
+		_putchar(*(str + j));
 	}
 	_putchar('\n');
 	}
