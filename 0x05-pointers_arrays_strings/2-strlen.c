@@ -9,9 +9,12 @@
 int _strlen(char *s)
 {
 	/* l = 1 to cover up for '\0' char in string*/
-	int l = 1;
+	int l;
+	int i;
 
-	for (int i = 0; *(s + i) != '\0'; i++)
+	l = 0;
+
+	for (i = 0; *(s + i) != '\0'; i++)
 	{
 		l++;
 	}
