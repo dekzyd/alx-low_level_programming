@@ -21,6 +21,8 @@ void print_rev(char *str)
 	/* print reversed string */
 	for (j = ln; j >= 0; j--)
 	{
+		if (*(str + j) == '\0')
+			continue;
 		_putchar(*(str + j));
 	}
 	_putchar('\n');
