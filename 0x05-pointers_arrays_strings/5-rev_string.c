@@ -19,12 +19,10 @@ void rev_string(char *str)
 	}
 
 	/* reverse string */
-	for (j = 0; j < ln/2; j++)
+	for (j = 0; j < ln / 2; j++)
 	{
 		temp = *(str + j);
-		*(str + j) = *(str + ln - j -1);
-		*(str + ln -j -1) = temp;
-
+		*(str + j) = *(str + ln - j - 1);
+		*(str + ln - j - 1) = temp;
 	}
-
 }
