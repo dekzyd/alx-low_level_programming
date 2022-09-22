@@ -3,37 +3,29 @@
 
 /**
  * leet - transforms string into leet code.
- * @s: the string to be transformed
+ * @str: the string to be transformed
  *
- * Return: pointer to string
+ * Return: pointer to encoded string
  */
-char *leet(char *s)
+char *leet(char *str)
 {
-	int i, ln;
+	/* Declare dictionaries (arrays) of characters */
+	int i;
+	char lower_case[] = {'a', 'e', 'o', 't', 'l'};
+	char upper_case[] = {'A', 'E', 'O', 'T', 'L'};
+	char numbers[] = {4, 3, 0, 7, 1};
+	char *encode = str;
 
-	ln = strlen(s);
-	for (i = 0; i < ln; i++)
+	while (*str)
 	{
-		if (s[i] == 'a' || s[i] == 'A')
+		for (i = 0; i < 5; i++)
 		{
-			s[i] = '4';
+			if (*str == lower_case[i] || *str == upper_case[i])
+			{
+				*str = numbers[i] + '0';
+			}
 		}
-		else if (s[i] == 'E' || s[i] == 'e')
-		{
-			s[i] = '3';
-		}
-		else if (s[i] == 'O' || s[i] == 'o')
-		{
-			s[i] = '0';
-		}
-		else if (s[i] == 'L' || s[i] == 'l')
-		{
-			s[i] = '1';
-		}
-		else if (s[i] == 'T' || s[i] == 't')
-		{
-			s[i] = '7';
-		}
+		str++;
 	}
-	return (s);
+	return (encode);
 }
