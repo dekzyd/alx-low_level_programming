@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * _strncpy - copies two strings 
+ * _strncpy - copies two strings
  * @dest: first string to be copied
  * @src: string to be copied
  * @n: number of bytes from src to be copied.
@@ -12,7 +12,7 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 
-	int i = 0;
+	i = 0;
 
 	while (i < n && *(src + i) != '\0')
 	{
