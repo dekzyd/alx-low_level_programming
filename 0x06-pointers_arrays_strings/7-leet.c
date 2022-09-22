@@ -30,12 +30,9 @@ char *leet(char *s)
 		{
 			s[i] = '1';
 		}
-		else
+		else if (s[i] == 'T' || s[i] == 't')
 		{
-			if (s[i] == 'T' || s[i] == 't')
-			{
-				s[i] = '7';
-			}
+			s[i] = '7';
 		}
 	}
 	return (s);
