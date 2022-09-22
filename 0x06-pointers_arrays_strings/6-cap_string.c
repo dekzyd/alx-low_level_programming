@@ -3,67 +3,32 @@
 
 /**
  * cap_string - capitalizes all words in string
- * @s: string to be worked on
+ * @str: string to be worked on
  *
  * Return: pointer to string
  */
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
-	int i, j, ln;
+	char *ptr = str;
+	int i, capitalize = 1;
 
-	ln = strlen(s);
-	for (j = 0; j < ln; j++)
-	{
-		if (s[j] >= 'A' && s[j] <= 'Z')
-		{
-			s[j] = s[j] + 32;
-		}
-	}
+	char word_sep[] = " \t\n,.!?\"{}()";
 
-	for (i = 0; i < ln; i++)
+	/* capitalize is true, so all the first chars are capitalized */
+	while (*str)
 	{
-		if (i == 0)
+		if (capitalize && *str >= 'a' && *str <= 'z')
 		{
-			if (s[i] >= 'a' && s[i] <= 'z')
-			{
-				s[i] = s[i] - 32;
-				continue;
-			}
+			*str = (*str - 'a') + 'A';
 		}
-		switch (s[i])
+		capitalize = 0;
+
+		for (i = 0; i < 12; i++)
 		{
-			case '\n':
-			case '\t':
-			case ' ':
-			case ',':
-			case ';':
-			case '.':
-			case '!':
-			case '?':
-			case '"':
-			case '(':
-			case ')':
-			case '{':
-			case '}':
-				++i;
-				if (s[i] >= 'a' && s[i] <= 'z')
-				{
-					s[i] = s[i] - 32;
-					continue;
-				}
-				else if (s[i] >= 'A' && s[i] <= 'Z')
-				{
-					continue;
-				}
-				else
-				{
-					++i;
-					if (s[i] >= 'a' && s[i] <= 'z')
-					{
-						s[i] = s[i] - 32;
-					}
-				}
+			if (*str == word_sep[i])
+				capitalize = 1;
 		}
+		str++;
 	}
-	return (s);
+	return (ptr);
 }
