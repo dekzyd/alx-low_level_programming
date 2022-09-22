@@ -4,7 +4,6 @@
 /**
  * string_toupper - changes lowercase chars to uppercase chars
  * @s: the string to be checked and converted
- * @ln: string length
  *
  * Return: pointer to modified string
  */
