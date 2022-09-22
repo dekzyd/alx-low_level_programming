@@ -1,24 +1,22 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
- * _strcmp - compares two strings 
- * @dest: first string to be copied
- * @src: string to be copied
- * @n: number of bytes from src to be copied.
+ * _strcmp - compares two strings
+ * @s1: first pointer to string to be compared
+ * @s2: Second pointer to string to be compared
  *
  * Return: returns pointer to dest.
  */
-char *_strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
-	int i, j, k, larger;
+	int k, larger;
 
-	int i = strlen(s1);
-	int j = strlen(s2);
 	/* strlen function returns the length of argument string passed */
-	if (i < j)
-		larger = j;
+	if (strlen(s1) < strlen(s2))
+		larger = strlen(s2);
 	else
-		larger = i;
+		larger = strlen(s1);
 	/* loops 'larger' times */
 	for (k = 0; k < larger; k++)
 	{
@@ -26,18 +24,7 @@ char *_strcmp(char *s1, char *s2)
 		if (*(s1 + k) == *(s2 + k))
 		{}
 		else
-			return *(s1 + k) - *(s2 + k)
-	}
-	return (0)
-}
-
-
-
-
-
-
-
-
-
+			return (*(s1 + k) - *(s2 + k));
+	};
 	return (0);
 }
