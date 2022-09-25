@@ -8,7 +8,7 @@
 int main(void)
 {
 
-char string[]="and that piece of art is useful\" - Dora Korpar, 2015-10-19\n"
-	fwrite("string", 59, 1, stderr);
+	char string[]="and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	write(1, string, 59);
 	return (1);
 }
