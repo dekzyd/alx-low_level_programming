@@ -3,7 +3,8 @@
 
 /**
  * create_array - creates array initialized with a char
- * @c: Character to initialize array with
+ * @c: Character to initialize array with.
+ * @size: the size of the array to be created
  *
  * Return: pointer to 1st char in array
  */
