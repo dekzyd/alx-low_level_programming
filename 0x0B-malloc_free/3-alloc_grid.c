@@ -18,7 +18,7 @@ int **alloc_grid(int width, int height)
 	}
 
 	/*allocate mem to ptr*/
-	ptr = malloc(height * sizeof(int *));
+	ptr = malloc(height * sizeof(*ptr));
 	if (ptr == NULL)
 	{
 		free(ptr);
@@ -27,7 +27,7 @@ int **alloc_grid(int width, int height)
 	/*allocate mem for ptr[i] i.e rows*/
 	for (i = 0; i < width; i++)
 	{
-		ptr[i] = malloc(width * sizeof(int **));
+		ptr[i] = malloc(width * sizeof(**ptr));
 	}
 	/* fill values */
 	for (i = 0; i < height; i++)
