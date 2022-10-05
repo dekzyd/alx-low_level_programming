@@ -9,10 +9,10 @@
  */
 char *argstostr(int ac, char **av)
 {
-	char *g;
-	int a, b, c, d, e, f;
+	char *str;
+	int a, b, ln, f;
 
-	c = 0;
+	ln = 0;
 	f = 0;
 	if (ac == 0 || av == NULL)
 	{
@@ -20,32 +20,32 @@ char *argstostr(int ac, char **av)
 	}
 	/*get length of all args. for each arg passed */
 	for (a = 0; a < ac; a++)
-	{	/* loop through each char and add 1 to length c*/
+	{	/* loop through each char and add 1 to length ln*/
 		for (b = 0; av[a][b] != '\0'; b++)
 		{
-			c++;
+			ln++;
 		}
 		/* Add one to compensate \0 char*/
-		c++;
+		ln++;
 	}
 
-	g = malloc(sizeof(char) * c + 1);
-	if (g == NULL)
+	str = malloc(sizeof(char) * ln + 1);
+	if (str == NULL)
 	{
 		return (NULL);
 	}
 	/* loop through each arg and assign each char to */
-	for (d = 0; d < ac; d++)
+	for (a = 0; a < ac; a++)
 	{
-		for (e = 0; av[d][e] != '\0'; e++)
+		for (b = 0; av[a][b] != '\0'; b++)
 		{
-			g[f] = av[d][e];
+			str[f] = av[a][b];
 			f++;
 		}
-		g[f++] = '\n';
+		str[f++] = '\n';
 	}
-	g[f] = '\0';
+	str[f] = '\0';
 
-	return (g);
+	return (str);
 
 }
