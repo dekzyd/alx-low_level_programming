@@ -1,7 +1,7 @@
+#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "main.h"
 
 /**
  * _calloc - creates an array initialized to 0.
