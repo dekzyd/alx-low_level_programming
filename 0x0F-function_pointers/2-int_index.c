@@ -1,5 +1,5 @@
 #include "function_pointers.h"
-
+#include <stddef.h>
 /**
  * int_index - searches for an int
  * @size: number of elements in the array
@@ -11,6 +11,8 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
+	unsigned int i;
+
 	if (array && cmp)
 	{
 		if (size <= 0)
