@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 
 /**
- * print_name - prints name 
+ * print_name - prints name
  * @name: name to be printed
  * @f: the function pointed to.
  *
@@ -9,5 +9,8 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	(f)(name);
+	if (name != NULL)
+	{
+		(f)(name);
+	}
 }
