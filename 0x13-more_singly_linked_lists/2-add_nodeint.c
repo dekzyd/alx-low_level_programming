@@ -2,11 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/** add_nodeint - adds a new node at the begining of a list
+/**
+ * add_nodeint - adds a new node at the begining of a list
  * @head: pointer to the address of the first element
  * @n: node data
  * Return: the address of the new element
- *
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
